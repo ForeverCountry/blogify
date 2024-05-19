@@ -22,7 +22,7 @@ To get started with using the Blogify API, follow these steps:
 2. Install dependencies:
 
     ```bash
-    cd blogify-api
+    cd api
     npm install
     ```
 
