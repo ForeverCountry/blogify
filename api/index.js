@@ -1,11 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
-const multer = require('multer');
-const uploadMiddleware = multer({ dest: 'uploads/' });
-const { connectDB } = require('./db');
+const { connectDB } = require('./utils/db');
 const authRoutes = require('./routes/auth');
 const postRoutes = require('./routes/posts');
+require('dotenv').config();
 
 const app = express();
 
@@ -19,6 +18,7 @@ connectDB();
 app.use('/auth', authRoutes);
 app.use('/posts', postRoutes);
 
-app.listen(4000, () => {
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
   console.log('Server is running on port 4000');
 });

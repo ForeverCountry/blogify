@@ -1,7 +1,7 @@
 const fs = require('fs');
 const jwt = require('jsonwebtoken');
 const Post = require('../models/Post');
-const { jwtSecret } = require('../config');
+const { jwtSecret } = require('../utils/config');
 
 const createPost = async (req, res) => {
   const { originalname, path } = req.file;
