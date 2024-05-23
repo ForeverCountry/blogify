@@ -41,7 +41,7 @@ const updatePost = async (req, res) => {
     if (postDoc.author.toString() !== info.id) {
       return res.status(400).json('you are not the author');
     }
-    await postDoc.update({
+    await postDoc.updateOne({
       title,
       summary,
       content,
