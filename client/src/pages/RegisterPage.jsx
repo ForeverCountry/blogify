@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { Navigate } from "react-router-dom";
 
 export default function RegisterPage() {
   const [username, setUsername] = useState('');
@@ -12,10 +13,13 @@ export default function RegisterPage() {
     });
     if (response.status === 200) {
       alert('registration successful');
+      return <Navigate to={'/'}/>
     } else {
       alert('registration failed');
     }
   }
+
+
   return (
     <form className="register" onSubmit={register}>
       <h1>Register</h1>
