@@ -1,8 +1,31 @@
-# React + Vite
+# Blogify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Blogify is a front-end application designed for creating, managing, and reading blog posts. This repository contains the client-side code built with ReactJS bootstrapped using vite.
 
-Currently, two official plugins are available:
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+- You have installed Node.js and npm.
+- You have a terminal or command-line interface (CLI) available.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/honorifia/blogify/
+   ```
+2. Navigate to the client directory
+    ```
+    cd blogify/client
+    ```
+3. Install the dependencies
+    ```
+    npm install
+    ```
+## Running the application
+To start the development server, run the following command:
+```
+npm run dev
+```
+This will launch the application and you can view it in your browser at `Local:   http://localhost:5173/`
